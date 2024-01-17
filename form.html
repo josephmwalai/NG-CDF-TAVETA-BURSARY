@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="Viewport" content="width=device-width, initial-scale=1.0">
+<title>bursary application</title>
+<style>
+.card {
+        max-width: 350px;
+        width: 100%;
+        padding: 30px;
+        background-color: rgba(128, 128, 128, 0.089);
+        border-radius: 1px;
+        box-shadow: 0 0 10px white(0, 0, 0, 0.1);
+        background-position: center;
+}
+    
+</style>
+</head>
+
+<body>
+    <div class="card">
+        <fieldset>
+            <legend>
+        <form action="/submit-bursary-application" method="post">
+            <label for="full name">Full Name:</label>
+            <input type="text" name="full name" id="full name" required><br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male" required><br>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" required><br>
+            <label for="county">Home County:</label>
+            <input type="text" name="county" id="county" required><br>
+            <label for="ward">Ward:</label>
+            <input type="text" name="ward" id="ward" required><br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" rows="5" required></textarea><br>
+            <label for="gpa">GPA:</label>
+            <input type="text" name="gpa" id="gpa" required><br>
+            <input type="checkbox" name="terms" id="terms" required>
+            <label for="terms">I agree to the terms and condition</label><br>
+            <button type="submit">Submit Application</button>
+        </form>
+        </legend>
+        </fieldset>
+</body>
+</html>
