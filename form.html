@@ -5,6 +5,34 @@
 <meta name="Viewport" content="width=device-width, initial-scale=1.0">
 <title>bursary application</title>
 <style>
+    .dropdown {
+        width: 200px;
+        margin: 20px;
+    }
+    #wardSelect {
+        width: 100%;
+        padding: 4px;
+        background-color: gray;
+        cursor: pointer;
+    }
+    #wardSelect option {
+        padding: 10px;
+    }
+    #wardSelect:focus {
+        outline: none;
+    }
+    #Subcountyselect {
+        width: 100%;
+        padding: 4px;
+        background-color: gray;
+        cursor: pointer;
+    }
+    #Subcountyselect {
+        padding: 10px;
+    }
+    #Subcountyselect:focus {
+        outline: none;
+    }
 .card {
         max-width: 350px;
         width: 100%;
@@ -33,14 +61,32 @@
             <input type="email" name="email" id="email" required><br>
             <label for="phone">Phone Number:</label>
             <input type="tel" name="phone" id="phone" required><br>
-            <label for="county">Home County:</label>
-            <input type="text" name="county" id="county" required><br>
+            <div class="dropdown">
+                <label for="Subcounty select">Home Subcounty:</label>
+                <select id="Subcounty select">
+                    <option value="disable selected">select Subcounty</option>
+                    <option value="Mwatate">Mwatate</option>
+                    <option value="Taveta">Taveta</option>
+                    <option value="Wundanyi">Wundanyi</option>
+                    <option value="Voi">Voi</option>
+                </select>
+                </div><br>
             <label for="ward">Ward:</label>
-            <input type="text" name="ward" id="ward" required><br>
+            <div class="dropdown">
+                <select id="ward select">
+                    <option value="disable selected">select ward</option>
+                    <option value="Bomani">Bomani</option>
+                    <option value="Chala">chala</option>
+                    <option value="Mboghoni">Mboghoni</option>
+                    <option value="Mata">Mata</option>
+                    <option value="Mahoo">Mahoo</option>
+                </select>
+            </div><br>
             <label for="address">Address:</label>
-            <textarea name="address" id="address" rows="5" required></textarea><br>
+            <textarea name="address" id="address" required></textarea><br>
             <label for="gpa">GPA:</label>
             <input type="text" name="gpa" id="gpa" required><br>
+
             <input type="checkbox" name="terms" id="terms" required>
             <label for="terms">I agree to the terms and condition</label><br>
             <button type="submit">Submit Application</button>
