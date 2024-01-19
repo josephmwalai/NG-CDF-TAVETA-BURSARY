@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scrollable Pages</title>
+<style>
+    .content {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100vh;
+        height: 80vh;
+    }
+    .section {
+        align-items: center;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    #one {
+        background-color: blueviolet;
+    }
+    #two {
+        background-color: blue;
+    }
+    #three {
+        background-color: brown;
+    }
+    #four {
+        background-color: cadetblue;
+    }
+    #five {
+        background-color: yellowgreen;
+    }
+::-webkit-scrollbar {
+    display: none;
+}
+.-webkit-keyframes preLoad{
+    display: none;
+}
+</style>
+</head>
+<body>
+    <div class="content">
+        <div class="section" id="one">
+            <h1>Welcome</h1>
+        </div>
+        <div class="section" id="two">
+            <h1>To</h1>
+        </div>
+        <div class="section" id="three">
+            <h1>Majambazi</h1>
+        </div>
+        <div class="section" id="four">
+            <h1>Za</h1>
+        </div>
+        <div class="section" id="five">
+            <h1>Majambazi</h1>
+        </div>
+    </div>
+</body>
+</html>
